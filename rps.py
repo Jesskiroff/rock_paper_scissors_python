@@ -28,26 +28,32 @@ s = '''
 ---.__(___)
 '''
 
-#Write your code below this line 👇
 
 import random
 
-user = input("Which do you play? Rock, Paper or Scissors? ")
+user = input("Which do you play? Rock, Paper or Scissors? \n")
 users_choice = user.lower()
 if users_choice == "rock":
-    print(rock + r)
+    print(r)
 elif users_choice == "paper":
-    print(paper + p)
+    print(p)
 else:
-    print(scissors + s)
+    print(s)
 rps = [rock, paper, scissors]
 rps_comp = len(rps)
 random_choice = random.randint(0, rps_comp - 1)
 computer_output = rps[random_choice]
 comp_output_str = str(computer_output)
 
-print(users_choice)
 print(comp_output_str)
+if computer_output == rock:
+    print(r)
+elif computer_output == scissors:
+    print(s)
+else:
+    print(p)
+    
+
 if users_choice == comp_output_str:
     print("Tie game")
 elif users_choice == "rock" and comp_output_str == "paper":
