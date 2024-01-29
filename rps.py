@@ -33,12 +33,13 @@ import random
 
 user = input("Which do you play? Rock, Paper or Scissors? \n")
 users_choice = user.lower()
+print("Rock, paper, scissors, shoot!")
 if users_choice == "rock":
-    print(r)
+    print(rock + r)
 elif users_choice == "paper":
-    print(p)
+    print(paper + p)
 else:
-    print(s)
+    print(scissors + s)
 rps = [rock, paper, scissors]
 rps_comp = len(rps)
 random_choice = random.randint(0, rps_comp - 1)
